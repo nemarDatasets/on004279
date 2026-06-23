@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Large Spanish EEG\n",
+  "description": "A large-scale Spanish EEG dataset comprising 60 sessions from 56 healthy participants recorded using 64-channel EEG during speech perception and silent speech production tasks. Participants listened to and silently repeated 30 daily-use Spanish sentences. This dataset enables development of subject-independent deep neural network models for perceived sentence classification, with applications to speech decoding and neuroprosthetics for individuals with speech disorders.",
+  "methods_description": "EEG data were recorded from 56 healthy participants (60 sessions total) using a 64-channel EEG system during speech perception and silent speech production tasks. The experimental protocol consisted of four segments: rest (5 s with fixation cross), perception (4-5 s with 6-7 sentence repetitions), preparation (1 s blank screen), and silent speech production (5 s). Participants listened to spoken Spanish sentences and then silently repeated them without motor action. Trials were presented in randomized order across 30 stimuli per block.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -9,50 +11,6 @@
     "Carolina Mendez-Orellana": {},
     "Maria Rodriguez-Fernandez": {}
   },
-  "related_identifiers": [
-    {
-      "identifier": "10.18112/openneuro.ds004279.v1.1.2",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
-    },
-    {
-      "identifier": "https://github.com/nemarDatasets/on004279",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004279",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "10.1088/1741-2552/ad7a4c",
-      "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
-    }
-  ],
-  "funding_references": [
-    {
-      "funder_name": "Agencia Nacional de Investigacion y Desarrollo (ANID Chile)",
-      "award_number": "21211883"
-    }
-  ],
-  "resource_type_general": "Dataset",
-  "modalities": [
-    "eeg"
-  ],
-  "resource_type_specific": "EEG Dataset",
-  "sizes": [
-    "0.0 KB (1 files)"
-  ],
-  "formats": [
-    ".edf",
-    ".json",
-    ".md",
-    ".tsv"
-  ],
-  "description": "This dataset comprises 60 EEG recording sessions from 56 healthy Spanish-speaking participants performing speech perception and silent speech production tasks. Participants listened to 30 daily-use Spanish sentences via audio recordings and were instructed to silently repeat each sentence. The study employed a 64-channel EEG system to investigate neural correlates of speech perception, with the goal of developing subject-independent deep neural network models for sentence classification that could enable speech neuroprostheses without requiring patient-specific training data.",
-  "methods_description": "EEG data were recorded using a 64-channel system during speech perception and silent speech production tasks. The experimental protocol consisted of four segments per trial: rest (5 seconds with fixation cross), perception (4-5 seconds with sentence repetitions), preparation (1 second blank screen), and silent speech production (5 seconds). Thirty Spanish sentences were presented in randomized order across blocks. For subjects S1-S18, perception lasted 4 seconds with 7 repetitions per sentence; for subjects S19 onward, perception was extended to 5 seconds with 6 repetitions per sentence.",
   "keywords": [
     {
       "term": "EEG"
@@ -70,11 +28,54 @@
       "term": "brain-computer interfaces"
     },
     {
-      "term": "subject-independent classification"
+      "term": "speech decoding"
     },
     {
-      "term": "Spanish language"
+      "term": "subject-independent classification"
     }
   ],
-  "source_hash": "16448f598d62487c777e6ebdeb31355cfb9b191bd9783f291e459c37e6a3f0de"
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/nemarDatasets/on004279",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004279",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1088/1741-2552/ad7a4c",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds004279.v1.1.2",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    }
+  ],
+  "funding_references": [
+    {
+      "funder_name": "Agencia Nacional de Investigacion y Desarrollo (ANID Chile)",
+      "award_number": "21211883"
+    }
+  ],
+  "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "sizes": [
+    "27.1 GB (61 files)"
+  ],
+  "formats": [
+    ".edf",
+    ".json",
+    ".md",
+    ".tsv",
+    ".yml"
+  ],
+  "source_hash": "7d683e4252319ee1dcca17f33e4f58567354835f14da594a4a7c185def795acc"
 }
